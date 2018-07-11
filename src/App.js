@@ -1,22 +1,23 @@
-import React, { Component } from 'react';
-import nancy from './images/nancy.jpg';
-import liz from './images/liz.jpg';
-import yvette from './images/yvette.jpg';
-import bill from './images/bill.jpg';
-import './App.css';
+import React, { Component } from "react";
+import nancy from "./images/nancy.jpg";
+import liz from "./images/liz.jpg";
+import yvette from "./images/yvette.jpg";
+import bill from "./images/bill.jpg";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <div className="header">
-          <p className="header-text">
-            Welcome, ya'll.
-          </p>
-        </div>
+        <Header />
         <div className="inner-wrapper">
           <h1 className="title">it's the fed team!</h1>
-          <p className="intro">There might only be four of us, but when we hit you upside the head with our mad skills, you'll think otherwise.</p>
+          <p className="intro">
+            There might only be four of us, but when we hit you upside the head
+            with our mad skills, you'll think otherwise.
+          </p>
 
           <div className="mug-wrapper">
             <div className="person">
@@ -39,13 +40,8 @@ class App extends Component {
               <p className="name">Bill</p>
             </div>
           </div>
-
-          <div className="footer"><p>Copyright 2018, from the Front End Design team.</p></div>
+          <Footer />
         </div>
-
-
-
-
       </div>
     );
   }
