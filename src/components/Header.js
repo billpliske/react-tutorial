@@ -8,7 +8,6 @@ const Header = props => {
       <button className="add-button" onClick={props.handleClick}>
         Add
       </button>
-      <button className="random-button">Random</button>
     </div>
   );
 };
