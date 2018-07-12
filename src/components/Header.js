@@ -6,7 +6,6 @@ class Header extends Component {
     return (
       <div className={`header ${this.props.name}`}>
         <p className="header-text">Welcome {this.props.name}</p>
-        <button className="add-button">Add</button>
       </div>
     );
   }
