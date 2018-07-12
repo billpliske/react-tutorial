@@ -5,7 +5,7 @@
 }
 
 .Nancy {
-    background-color: lightcoral;
+    background-color: rgb(240, 128, 128);
 }
 
 .Liz {
@@ -47,17 +47,21 @@
     top: 0;
 }
 
-.inner-wrapper {
+.gradient-wrapper {
     background: linear-gradient(to bottom, #2193b0, #6dd5ed);
     height: 100vh;
-    margin: 0;
     padding: 70px;
     position: relative;
 }
 
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 .title {
     color: rgb(23, 95, 95);
-    font-size: 90px;
+    font-size: 85px;
     letter-spacing: -3px;
     margin: 0;
 }
@@ -69,7 +73,7 @@
     margin: 0;
 }
 
-.mug-wrapper {
+.grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 50px 0;
