@@ -6,6 +6,7 @@ import bill from "./images/bill.jpg";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import staffArray from "./data/staff.json";
 
 class App extends Component {
   constructor(props) {
@@ -36,21 +37,41 @@ class App extends Component {
               <div className="person">
                 <img src={nancy} alt="Nancy" />
                 <p className="name">Nancy</p>
+                {staffArray.map((item, index) => (
+                  <p className="about" key={index}>
+                    {item.nancy}
+                  </p>
+                ))}
               </div>
 
               <div className="person">
                 <img src={liz} alt="Liz" />
                 <p className="name">Liz</p>
+                {staffArray.map((item, index) => (
+                  <p className="about" key={index}>
+                    {item.liz}
+                  </p>
+                ))}
               </div>
 
               <div className="person">
                 <img src={yvette} alt="Yvette" />
                 <p className="name">Yvette</p>
+                {staffArray.map((item, index) => (
+                  <p className="about" key={index}>
+                    {item.yvette}
+                  </p>
+                ))}
               </div>
 
               <div className="person">
                 <img src={bill} alt="Bill" />
                 <p className="name">Bill</p>
+                {staffArray.map((item, index) => (
+                  <p className="about" key={index}>
+                    {item.bill}
+                  </p>
+                ))}
               </div>
             </div>
             <Footer />

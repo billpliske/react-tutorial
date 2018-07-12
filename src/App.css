@@ -70,7 +70,14 @@
 
 .name {
     color: white;
-    margin: 5px 0 60px 0;
+    margin: 5px 0 0 0;
+}
+
+.about {
+    color: rgb(26, 80, 97);
+    font-style: italic;
+    margin: 10px 0 60px 0;
+    max-width: 260px;
 }
 
 .footer {
