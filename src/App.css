@@ -9,20 +9,6 @@
     margin: 0;
 }
 
-.add-button {
-    padding: 10px 20px;
-    position: absolute;
-    right: 80px;
-    top: 16px;
-}
-
-.random-button {
-    padding: 10px 20px;
-    position: absolute;
-    right: 160px;
-    top: 16px;
-}
-
 .inner-wrapper {
     background: linear-gradient(to bottom, #2193b0, #6dd5ed);
     height: 100vh;
