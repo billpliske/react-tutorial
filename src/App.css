@@ -4,6 +4,22 @@
     padding: 25px 80px;
 }
 
+.Nancy {
+    background-color: lightcoral;
+}
+
+.Liz {
+    background-color: rgb(219, 145, 76);
+}
+
+.Yvette {
+    background-color: rgb(212, 99, 179);
+}
+
+.Bill {
+    background-color: rgb(44, 209, 118);
+}
+
 .header-text {
     display: inline-block;
     margin: 0;
