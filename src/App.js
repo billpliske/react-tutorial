@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <Header />
+        <Header name="" />
         <div className="inner-wrapper">
           <h1 className="title">it's the fed team!</h1>
           <p className="intro">
