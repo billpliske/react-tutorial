@@ -14,7 +14,9 @@ class App extends Component {
   }
 
   addNumber = () => {
-    this.setState({ number: this.state.number + 1 });
+    this.setState((prevState, props) => {
+      return { number: prevState.number + 1 };
+    });
   };
 
   render() {
