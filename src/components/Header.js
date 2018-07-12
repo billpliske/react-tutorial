@@ -1,15 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 import "../App.css";
 
-const Header = props => {
-  return (
-    <div className={`header ${props.name}`}>
-      <p className="header-text">Welcome {props.name}</p>
-      <button className="add-button" onClick={props.handleClick}>
-        Add
-      </button>
-    </div>
-  );
-};
+class Header extends Component {
+  render() {
+    return (
+      <div className={`header ${this.props.name}`}>
+        <p className="header-text">Welcome {this.props.name}</p>
+        <button className="add-button" onClick={this.props.handleClick}>
+          Add
+        </button>
+      </div>
+    );
+  }
+}
 
 export default Header;

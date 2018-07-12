@@ -25,7 +25,7 @@ class App extends Component {
         <Header name="" handleClick={this.addNumber} />
         <div className="gradient-wrapper">
           <div className="content-wrapper">
-            <h1 className="title">it\'s the fed team!</h1>
+            <h1 className="title">it's the fed team!</h1>
             <p className="intro">
               There might only be <strong>{this.state.number}</strong> of us,
               but when we hit you upside the head with our mad skills, you'll
