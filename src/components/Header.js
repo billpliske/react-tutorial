@@ -6,8 +6,6 @@ class Header extends Component {
     return (
       <div className="header">
         <p className="header-text">Welcome, ya'll.</p>
-        <button className="add-button">Add</button>
-        <button className="random-button">Random</button>
       </div>
     );
   }
