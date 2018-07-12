@@ -39,6 +39,14 @@
     top: 16px;
 }
 
+.number {
+    font-size: 22px;
+    font-weight: 900;
+    position: absolute;
+    right: 270px;
+    top: 0;
+}
+
 .inner-wrapper {
     background: linear-gradient(to bottom, #2193b0, #6dd5ed);
     height: 100vh;
