@@ -115,6 +115,7 @@ const Person = styled.div`
 
 const Name = styled.p`
   color: white;
+  font-size: 20px;
   margin: 5px 0 0 0;
 `;
 
