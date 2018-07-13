@@ -1,14 +1,22 @@
 import React, { Component } from "react";
-import "../App.css";
+import styled from "styled-components";
 
 class Footer extends Component {
   render() {
     return (
-      <div className="footer">
+      <Wrapper>
         <p>Copyright 2018, from the Front End Design team.</p>
-      </div>
+      </Wrapper>
     );
   }
 }
+
+const Wrapper = styled.div`
+  color: rgb(20, 92, 92);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+`;
 
 export default Footer;

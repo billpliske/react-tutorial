@@ -3,10 +3,10 @@ import nancy from "./images/nancy.jpg";
 import liz from "./images/liz.jpg";
 import yvette from "./images/yvette.jpg";
 import bill from "./images/bill.jpg";
-import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import staffArray from "./data/staff.json";
+import styled from "styled-components";
 
 class App extends Component {
   constructor(props) {
@@ -22,64 +22,107 @@ class App extends Component {
 
   render() {
     return (
-      <div className="wrapper">
-        <Header name="" handleClick={this.addNumber} />
-        <div className="gradient-wrapper">
-          <div className="content-wrapper">
-            <h1 className="title">it's the fed team!</h1>
-            <p className="intro">
+      <div>
+        <Header name="Nancy" handleClick={this.addNumber} />
+        <GradientWrapper>
+          <Content>
+            <Headline>it's the fed team!</Headline>
+            <Intro>
               There might only be <strong>{this.state.number}</strong> of us,
               but when we hit you upside the head with our mad skills, you'll
               think otherwise.
-            </p>
+            </Intro>
 
-            <div className="grid-wrapper">
-              <div className="person">
+            <GridWrapper>
+              <Person>
                 <img src={nancy} alt="Nancy" />
-                <p className="name">Nancy</p>
+                <Name>Nancy</Name>
                 {staffArray.map((item, index) => (
-                  <p className="about" key={index}>
-                    {item.nancy}
-                  </p>
+                  <About key={index}>{item.nancy}</About>
                 ))}
-              </div>
+              </Person>
 
-              <div className="person">
+              <Person>
                 <img src={liz} alt="Liz" />
-                <p className="name">Liz</p>
+                <Name>Liz</Name>
                 {staffArray.map((item, index) => (
-                  <p className="about" key={index}>
-                    {item.liz}
-                  </p>
+                  <About key={index}>{item.liz}</About>
                 ))}
-              </div>
+              </Person>
 
-              <div className="person">
+              <Person>
                 <img src={yvette} alt="Yvette" />
-                <p className="name">Yvette</p>
+                <Name>Yvette</Name>
                 {staffArray.map((item, index) => (
-                  <p className="about" key={index}>
-                    {item.yvette}
-                  </p>
+                  <About key={index}>{item.yvette}</About>
                 ))}
-              </div>
+              </Person>
 
-              <div className="person">
+              <Person>
                 <img src={bill} alt="Bill" />
-                <p className="name">Bill</p>
+                <Name>Bill</Name>
                 {staffArray.map((item, index) => (
-                  <p className="about" key={index}>
-                    {item.bill}
-                  </p>
+                  <About key={index}>{item.bill}</About>
                 ))}
-              </div>
-            </div>
+              </Person>
+            </GridWrapper>
             <Footer />
-          </div>
-        </div>
+          </Content>
+        </GradientWrapper>
       </div>
     );
   }
 }
+
+const GradientWrapper = styled.div`
+  background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+  height: 100vh;
+  padding: 70px;
+  position: relative;
+`;
+
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 800px;
+`;
+
+const Headline = styled.h1`
+  color: rgb(23, 95, 95);
+  font-size: 85px;
+  letter-spacing: -3px;
+  margin: 0;
+`;
+
+const Intro = styled.p`
+  color: white;
+  color: rgb(194, 227, 238);
+  font-size: 19px;
+  font-weight: 100;
+  margin: 0;
+`;
+
+const GridWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0;
+`;
+
+const Person = styled.div`
+  img {
+    border: 8px white solid;
+  }
+`;
+
+const Name = styled.p`
+  color: white;
+  margin: 5px 0 0 0;
+`;
+
+const About = styled.p`
+  color: rgb(26, 80, 97);
+  font-style: italic;
+  margin: 10px 0 60px 0;
+  max-width: 260px;
+`;
 
 export default App;
